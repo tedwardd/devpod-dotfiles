@@ -12,3 +12,6 @@ ln -sf "$PWD/tmux" "$XDG_CONFIG_HOME/tmux"
 ln -sf "$PWD/config.nix" "$XDG_CONFIG_HOME/nixpkgs/config.nix"
 
 nix-env -iA nixpkgs.myPackages
+
+git clone https://github.com/davidparsson/zsh-pyenv-lazy.git ~/.oh-my-zsh/custom/plugins/pyenv-lazy
+git clone https://github.com/kadaan/zsh-rbenv-lazy.git ~/.oh-my-zsh/custom/plugins/rbenv-lazy

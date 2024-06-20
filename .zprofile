@@ -1,1 +1,1 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+[[ $(uname -o) == "Darwin" ]] && eval "$(/opt/homebrew/bin/brew shellenv)"

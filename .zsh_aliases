@@ -1,0 +1,13 @@
+alias vim="nvim"
+alias v="nvim"
+alias gauth="gcloud auth login --update-adc"
+alias back='cd $(git rev-parse --show-toplevel)'
+alias bare='cd $(git worktree list | head -n1 | cut -d" " -f1)'
+alias tl="bare"
+alias w="worklog"
+alias kubesplit="docker container run -ti --rm -v $(pwd):/code -w /code looztra/kubesplit"
+alias k=kubectl
+alias kg="kubectl get"
+alias ke="kubectl edit"
+alias kl="kubectl logs"
+alias kd="kubectl describe"

@@ -1,0 +1,17 @@
+function tfv() {
+    project=$1 yq '.projects[]|select(.name==env(project)).terraform_version' "$(git rev-parse --show-toplevel)/atlantis.yaml"
+}
+
+function pe() {
+  [[ $(pwd) != "$HOME/git/puppet-modules" ]] && { pushd "$HOME/git/puppet-modules" || exit 1 } && popped=true
+  script/pushenv
+  [[ "$popped" == "true" ]] && { popd || exit 1 }
+}
+
+function mcback() {
+  host=$1
+  _type=$2
+  action=$3
+  instance=$4
+  ssh $host sudo mcback $_type $action $instance
+}

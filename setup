@@ -8,6 +8,8 @@ ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME/nvim"
 
 ln -sf "$PWD/.zshrc" "$HOME/.zshrc"
 ln -sf "$PWD/.zprofile" "$HOME/.zprofile"
+ln -sf "$PWD/.zsh_aliases" "$HOME/.zsh_aliases"
+ln -sf "$PWD/.zsh_func" "$HOME/.zsh_func"
 ln -sf "$PWD/tmux" "$XDG_CONFIG_HOME/tmux"
 ln -sf "$PWD/config.nix" "$XDG_CONFIG_HOME/nixpkgs/config.nix"
 
